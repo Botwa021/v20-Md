@@ -4,56 +4,54 @@ let path = require('path')
 let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': 'MENU UTAMA',
-  'game': 'MENU GAME',
-  'rpg': 'MENU RPG',
-  'xp': 'MENU EXP',
-  'premium': 'MENU PREMIUM',
-  'group': 'MENU GROUP',
-  'absen': 'MENU ABSEN',
-  'vote': 'MENU VOTE',
-  'owner': 'MENU OWNER',
-  'fun': 'MENU FUN',
-  'sticker': 'MENU CONVERT',
-  'maker': 'MENU MAKER',
-  'github': 'MENU GITHUB',
-  'internet': 'INTERNET',
-  'kerang': 'MENU KERANG',
-  'anime': 'MENU ANIME',
-  'downloader': 'DOWNLOADER',
-  'nsfw': 'MENU NSFW',
-  'tools': 'MENU TOOLS',
-  'advanced': 'ADVANCED',
-  'quotes': 'MENU QUOTES',
-  'info': 'MENU INFO',
+  'main': 'Menu Utama',
+  'game': 'Menu Game',
+  'rpg': 'Menu RPG',
+  'xp': 'Menu EXP',
+  'premium': 'Menu Premium',
+  'group': 'Menu Grup',
+  'absen': 'Menu Absen',
+  'vote': 'Menu Vote',
+  'owner': 'Menu Owner',
+  'fun': 'Menu Fun',
+  'sticker': 'Menu Convert',
+  'maker': 'Menu Maker',
+  'github': 'Menu Github',
+  'internet': 'Internet',
+  'kerang': 'Menu Kerang',
+  'anime': 'Menu Anime',
+  'downloader': 'Downloader',
+  'nsfw': 'Menu NSFW',
+  'tools': 'Menu Tools',
+  'advanced': 'Advanced',
+  'quotes': 'Menu Quotes',
+  'info': 'Menu Info',
 }
 const defaultMenu = {
   before: `
-┏━━━ꕥ〔 *${namabot}* 〕ꕥ━⬣
-┃✾ Hai, %name!
+┏━━━『 MS Bot 』━━⬣
+┃⬡ *Hai*, %name!
 ┃
-┃✾ Tersisa *%limit Limit*
-┃✾ Role *%role*
-┃✾ Level *%level (%exp / %maxexp)* 
-┃✾ [%xp4levelup]
-┃✾ %totalexp XP secara Total
-┗━ꕥ
-┏━ꕥ 
-┃✾ Hari : *%week %weton* 
-┃✾ Tanggal : *%date*
-┃✾ Tanggal Islam : *%dateIslamic*
-┃✾ Jam : *%time Wib*
-┗━ꕥ
-┏━ꕥ
-┃✾ Uptime: *%uptime (%muptime)*
-┃✾ Database: %rtotalreg dari %totalreg
-┃✾ Youtube:
-┃✾ https://pastelink.net/v20Md
-┗━━━━━━ꕥ
+┃⬡ *Tersisa* : %limit Limit
+┃⬡ *Role* : %role
+┃⬡ *Level* : %level (%exp / %maxexp) 
+┃⬡ *Exp* : %totalexp XP 
+┃ 
+┃⬡ *Hari* : %week %weton 
+┃⬡ *Tanggal* : %date
+┃⬡ *Tanggal Islam* : %dateIslamic
+┃⬡ *Waktu* : %time
+┃
+┃⬡ *Uptime* : %uptime
+┃⬡ *Database* : %rtotalreg dari %totalreg
+┃⬡ *Memory Used* : ${ramDipake}MB / ${totalram}MB
+┃⬡ *Instagram* :
+┃⬡ https://instagram.com/mursid.st
+┗━━━━━━━━━━━⬣
 %readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ ⎙ %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '┏━━『 %category 』━━⬣',
+  body: '┃⬡ %cmd %islimit %isPremium',
+  footer: '┗━━━━━━━━━⬣\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -168,36 +166,36 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'source code',
+               displayText: '𝓢𝓬𝓻𝓲𝓹𝓽 𝓑𝓸𝓽',
                url: `${ApiiKey}`
              }
 
            },
              {
              callButton: {
-               displayText: '𝚙𝚑𝚘𝚗𝚎 𝚗𝚞𝚖𝚋𝚎𝚛',
-               PhoneNumber: '6288279268363'
+               displayText: '𝓟𝓱𝓸𝓷𝓮 𝓝𝓾𝓶𝓫𝓮𝓻',
+               PhoneNumber: '6288233832771'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁',
+               displayText: '𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓻',
                id: '.owner',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
+               displayText: '𝓓𝓸𝓷𝓪𝓼𝓲',
                id: '.donasi',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: 'YukiBot 𝚝𝚎𝚊𝚖',
-               id: '.tqto',
+               displayText: '𝓘𝓷𝓯𝓸 𝓜𝓾𝓻𝓼𝓲𝓭',
+               id: '.infomursid',
              }
            }]
          }

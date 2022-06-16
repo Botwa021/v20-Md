@@ -29,7 +29,8 @@ KingOfBear:
 https://github.com/SaipulAnuar
 ilham: 
 https://github.com/Ilhamskhzyi
-
+Mursid S
+https://github.com/Botwa021
 `
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -48,7 +49,7 @@ https://github.com/Ilhamskhzyi
        
                {
              quickReplyButton: {
-               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               displayText: '𝙼𝙴𝙽𝚄',
                id: '.menu',
              }
 

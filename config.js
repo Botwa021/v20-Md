@@ -38,22 +38,22 @@ bearkey = 'https://pastelink.net/v20Md'
 ApiiKey = 'https://pastelink.net/v20Md'
 vinkey = 'vinko'
 
-namabot = 'MS Bot'
-namalu = 'Mursid'
-footer = '\n© Ms Bot'
-kasihcaption = `Nih`
+namabot = 'мυяѕι∂ вσт'
+namalu = 'Mursid S'
+footer = '\n© мυяѕι∂ вσт'
+kasihcaption = `instagram.com/mursid.st`
 
 // Sticker WM
 global.stiker_wait = '_*Tunggu Sebentar...*_'
 global.packname = '© 2022'
-global.author = 'MS Bot'
-global.email = 'akunsesi021@gmail.om'
+global.author = 'Mursid S'
+global.email = 'mursidmulo@gmail.com'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.wm = '© MS Bot'
-global.media = 'https://telegra.ph/file/5d45a3d1e12726d98c5e4.jpg'
+global.wm = '© мυяѕι∂ вσт'
+global.media = 'https://telegra.ph/file/9421a106287e081a2945d.jpg'
 
-global.wait = '_*Tunggu Sebentar Sedang Di Proses...*_'
-global.eror = '_*Server Error*_'
+global.wait = '_*тυηggυ ρєʀмιηтααη ѕє∂αηg ∂ιρяσѕєѕ...*_'
+global.eror = '_*ѕєʀνєʀ єʀʀσʀ*_'
 
 global.multiplier = 69 // The higher, The harder levelup
 

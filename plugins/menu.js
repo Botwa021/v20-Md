@@ -29,7 +29,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┏━━━『 MS Bot 』━━⬣
+┏━━━『 мυяѕι∂ вσт 』━━⬣
 ┃⬡ *Hai*, %name!
 ┃
 ┃⬡ *Tersisa* : %limit Limit
